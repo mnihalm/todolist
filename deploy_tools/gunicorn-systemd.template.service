@@ -7,3 +7,4 @@ EnvironmentFile=/home/ubuntu/sites/DOMAIN/.env
 ExecStart=/home/ubuntu/sites/DOMAIN/virtualenv/bin/gunicorn --bind unix:/tmp/DOMAIN.socket superlists.wsgi:application
 
 [Install]
+WantedBy=multi-user.target
